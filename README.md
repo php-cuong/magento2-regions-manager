@@ -29,5 +29,6 @@ composer require php-cuong/magento2-regions-manager
  * php bin/magento cache:flush
  * php bin/magento setup:static-content:deploy
 
-## Preview
+####2 - See results
+Log into your Magento admin, goto Customers -> Manage Regions in Addresses
 ![image](https://raw.githubusercontent.com/php-cuong/magento2-regions-manager/master/regions-manager.png)
