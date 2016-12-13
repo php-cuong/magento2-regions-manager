@@ -29,4 +29,4 @@ composer require php-cuong/magento2-regions-manager
  * php bin/magento setup:static-content:deploy
 
 ## Preview
-![image](https://raw.githubusercontent.com/PHPCuong/magento2-regions-manager/master/regions-manager.png)
+![image](https://raw.githubusercontent.com/php-cuong/magento2-regions-manager/master/regions-manager.png)
