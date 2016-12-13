@@ -6,7 +6,7 @@ Very Easy to use
 Test and working with Magento CE 2.0+, and Magento EE 2.0+
 
 ###Benefits
-This module provides flexibility of managing this regions for each country in your Magento Admin.
+This module provides flexibility of managing the regions for each country in your Magento Admin.
 
 ####1 - Installation Regions Manager
 ##### Manual Installation
