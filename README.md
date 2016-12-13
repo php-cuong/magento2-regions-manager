@@ -20,7 +20,7 @@ Install Regions Manager for Magento2
 #####Using Composer
 
 ```
-composer require PHPCuong/magento2-regions-manager
+composer require php-cuong/magento2-regions-manager
 ```
 
 ####2 - Enable Regions Manager
