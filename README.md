@@ -32,4 +32,8 @@ composer require php-cuong/magento2-regions-manager
 ####3 - See results
 Log into your Magento admin, goto Customers -> Manage Regions in Addresses
 
-[![ScreenShot](https://raw.githubusercontent.com/php-cuong/magento2-regions-manager/master/regions-manager.png)](http://youtu.be/krhVy0-OKhY)
+[![ScreenShot](https://raw.githubusercontent.com/php-cuong/magento2-regions-manager/master/regions-manager.png)]
+
+####Video the details about installing this module
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/krhVy0-OKhY" frameborder="0" allowfullscreen></iframe>
