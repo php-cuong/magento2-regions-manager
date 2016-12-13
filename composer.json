@@ -20,6 +20,13 @@
         "OSL-3.0",
         "AFL-3.0"
     ],
+    "authors": [
+        {
+            "name": "Cuong NQ",
+            "email": "bestearnmoney87@gmail.com",
+            "role": "Developer"
+        }
+    ],
     "autoload": {
         "files": [
             "registration.php"
