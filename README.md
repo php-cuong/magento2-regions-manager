@@ -3,7 +3,7 @@ Magento2 provides country and regions and cities as dropdown option in addresses
 
 Very Easy to use
 
-Test and working with Magento CE 2.0+, and Magento EE 2.0+
+Test and working with Magento CE 2.0+, 2.1+ and Magento EE 2.0+, 2.1+
 
 ###Benefits
 This module provides flexibility of managing the regions for each country in your Magento Admin.
@@ -26,6 +26,7 @@ composer require php-cuong/magento2-regions-manager
 ####2 - Enable Regions Manager
  * php bin/magento module:enable PHPCuong_Region
  * php bin/magento setup:upgrade
+ * php bin/magento cache:flush
  * php bin/magento setup:static-content:deploy
 
 ## Preview
