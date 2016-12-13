@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <virtualType name="PHPCuongRegionGirdFilterPool" type="Magento\Framework\View\Element\UiComponent\DataProvider\FilterPool">
+        <arguments>
+            <argument name="appliers" xsi:type="array">
+                <item name="regular" xsi:type="object">Magento\Framework\View\Element\UiComponent\DataProvider\RegularFilter</item>
+                <item name="fulltext" xsi:type="object">Magento\Framework\View\Element\UiComponent\DataProvider\FulltextFilter</item>
+            </argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="PHPCuongRegionRegionGridDataProvider" type="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider">
+        <arguments>
+            <argument name="collection" xsi:type="object" shared="false">PHPCuong\Region\Model\ResourceModel\Region\Collection</argument>
+            <argument name="filterPool" xsi:type="object" shared="false">PHPCuongRegionGirdFilterPool</argument>
+        </arguments>
+    </virtualType>
+    <type name="PHPCuong\Region\Model\ResourceModel\Region\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">directory_country_region</argument>
+            <argument name="eventPrefix" xsi:type="string">directory_country_region_grid_collection</argument>
+            <argument name="eventObject" xsi:type="string">region_grid_collection</argument>
+            <argument name="resourceModel" xsi:type="string">PHPCuong\Region\Model\ResourceModel\Region</argument>
+        </arguments>
+    </type>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="region_listing_data_source" xsi:type="string">PHPCuong\Region\Model\ResourceModel\Region\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

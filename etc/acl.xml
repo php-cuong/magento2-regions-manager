@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="PHPCuong_Region::region" title="Regions Manager">
+                    <resource id="PHPCuong_Region::region_create" title="Create"/>
+                    <resource id="PHPCuong_Region::region_edit" title="Edit" />
+                    <resource id="PHPCuong_Region::region_delete" title="Delete"/>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

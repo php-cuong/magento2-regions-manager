@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+        <add id="PHPCuong_Region::region" title="Manage Regions in Addresses" module="PHPCuong_Region" sortOrder="65" parent="Magento_Customer::customer" action="phpcuong/region" resource="PHPCuong_Region::region"/>
+    </menu>
+</config>
