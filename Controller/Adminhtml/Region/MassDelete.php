@@ -5,7 +5,7 @@
  * @Author              Ngo Quang Cuong <bestearnmoney87@gmail.com>
  * @Date                2016-12-12 01:12:57
  * @Last modified by:   nquangcuong
- * @Last Modified time: 2016-12-12 04:33:51
+ * @Last Modified time: 2016-12-15 23:30:16
  */
 
 namespace PHPCuong\Region\Controller\Adminhtml\Region;
@@ -17,6 +17,12 @@ use PHPCuong\Region\Model\ResourceModel\Region\CollectionFactory;
 
 class MassDelete extends \Magento\Backend\App\Action
 {
+    /**
+     * Authorization level of a basic admin session
+     *
+     * @see _isAllowed()
+     */
+    const ADMIN_RESOURCE = 'PHPCuong_Region::region_delete';
     /**
      * @var Filter
      */
@@ -60,14 +66,4 @@ class MassDelete extends \Magento\Backend\App\Action
         $resultRedirect = $this->resultFactory->create(ResultFactory::TYPE_REDIRECT);
         return $resultRedirect->setPath('*/*/');
     }
-
-    /**
-     * Check if user has permission to visit this page.
-     *
-     * @return bool
-     */
-    // protected function _isAllowed()
-    // {
-    //     return $this->_authorization->isAllowed('PHPCuong_Region::region_action_delete');
-    // }
 }
