@@ -5,7 +5,7 @@
  * @Author              Ngo Quang Cuong <bestearnmoney87@gmail.com>
  * @Date                2016-12-11 23:53:28
  * @Last modified by:   nquangcuong
- * @Last Modified time: 2016-12-12 17:28:45
+ * @Last Modified time: 2016-12-16 02:07:17
  */
 
 namespace PHPCuong\Region\Model\ResourceModel\Region\Grid;
@@ -140,6 +140,6 @@ class Collection extends \PHPCuong\Region\Model\ResourceModel\Region\Collection 
      */
     public function setItems(array $items = null)
     {
-        //return $this;
+        return $this;
     }
 }
