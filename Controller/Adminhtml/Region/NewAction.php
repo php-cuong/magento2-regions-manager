@@ -37,7 +37,7 @@ class NewAction extends \Magento\Backend\App\Action
     ) {
         $this->coreRegistry = $coreRegistry;
         $this->resultPageFactory = $resultPageFactory;
-        parent::__construct($context, $coreRegistry);
+        parent::__construct($context);
     }
 
     /**
