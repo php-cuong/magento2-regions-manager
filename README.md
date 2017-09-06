@@ -38,6 +38,9 @@ Log into your Magento admin, goto Customers -> Manage Regions in Addresses
 
 https://www.youtube.com/watch?v=krhVy0-OKhY
 
+#### See the Regions Manager Pro Extension here (Price $299)
+https://www.youtube.com/watch?v=av4C1u5_BWY
+
 ### Donations
 Please donate if you enjoy my extension.
 
