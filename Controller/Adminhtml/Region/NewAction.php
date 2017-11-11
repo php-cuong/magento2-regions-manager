@@ -5,7 +5,7 @@
  * @Author              Ngo Quang Cuong <bestearnmoney87@gmail.com>
  * @Date                2016-12-13 01:08:32
  * @Last modified by:   nquangcuong
- * @Last Modified time: 2016-12-13 15:08:39
+ * @Last Modified time: 2017-11-11 23:02:48
  */
 
 namespace PHPCuong\Region\Controller\Adminhtml\Region;
@@ -37,7 +37,7 @@ class NewAction extends \Magento\Backend\App\Action
     ) {
         $this->coreRegistry = $coreRegistry;
         $this->resultPageFactory = $resultPageFactory;
-        parent::__construct($context, $coreRegistry);
+        parent::__construct($context);
     }
 
     /**
