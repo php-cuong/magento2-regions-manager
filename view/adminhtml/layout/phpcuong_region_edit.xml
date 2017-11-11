@@ -11,5 +11,15 @@
         <referenceContainer name="content">
             <block class="PHPCuong\Region\Block\Adminhtml\Region\Edit" name="phpcuong_region_edit"/>
         </referenceContainer>
+        <referenceContainer name="legal.copyright">
+            <block class="Magento\Backend\Block\Page\Copyright" name="faq-copyright" template="PHPCuong_Region::footer/copyright.phtml"/>
+            <referenceBlock name="copyright" remove="true"/>
+        </referenceContainer>
+        <referenceContainer name="legal.system">
+            <referenceBlock name="report" remove="true"/>
+            <referenceBlock name="version" remove="true"/>
+            <block class="Magento\Framework\View\Element\Template" name="faq-version" template="PHPCuong_Region::footer/version.phtml"/>
+            <block class="Magento\Framework\View\Element\Template" name="faq-report" template="PHPCuong_Region::footer/report.phtml"/>
+        </referenceContainer>
     </body>
 </page>
