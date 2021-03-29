@@ -36,6 +36,7 @@ Log into your Magento admin, goto Customers -> Manage Regions in Addresses
 
 #### See the Regions Manager Pro Extension here
 https://github.com/php-cuong/magento2-city-dropdown
+
 Extension link: https://www.giaphugroup.com/magento-2-city-dropdown-extension.html
 
 ### Donations
