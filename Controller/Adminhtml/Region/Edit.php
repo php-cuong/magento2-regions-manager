@@ -78,7 +78,7 @@ class Edit extends \Magento\Backend\App\Action
         if ($id && $id > 0) {
             $model->load($id);
             if (!$model->getRegionId()) {
-                $this->messageManager->addError(__('This region no longer exists.'));
+                $this->messageManager->addErrorMessage(__('This region no longer exists.'));
                 /** \Magento\Backend\Model\View\Result\Redirect $resultRedirect */
                 $resultRedirect = $this->resultRedirectFactory->create();
                 return $resultRedirect->setPath('*/*/');

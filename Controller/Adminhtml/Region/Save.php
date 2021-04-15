@@ -54,7 +54,7 @@ class Save extends \Magento\Backend\App\Action
             /** @var \PHPCuong\Region\Model\Region $model */
             $model = $this->_objectManager->create('PHPCuong\Region\Model\Region')->load($id);
             if (!$model->getRegionId() && $id) {
-                $this->messageManager->addError(__('This region no longer exists.'));
+                $this->messageManager->addErrorMessage(__('This region no longer exists.'));
                 return $resultRedirect->setPath('*/*/');
             }
 
@@ -62,16 +62,16 @@ class Save extends \Magento\Backend\App\Action
 
             try {
                 $model->save();
-                $this->messageManager->addSuccess(__('You saved the region.'));
+                $this->messageManager->addSuccessMessage(__('You saved the region.'));
 
                 if ($this->getRequest()->getParam('back')) {
                     return $resultRedirect->setPath('*/*/edit', ['region_id' => $model->getRegionId()]);
                 }
                 return $resultRedirect->setPath('*/*/');
             } catch (LocalizedException $e) {
-                $this->messageManager->addError($e->getMessage());
+                $this->messageManager->addErrorMessage($e->getMessage());
             } catch (\Exception $e) {
-                $this->messageManager->addException($e, __('Something went wrong while saving the region.'));
+                $this->messageManager->addExceptionMessage($e, __('Something went wrong while saving the region.'));
             }
 
             $this->_getSession()->setFormData($data);
